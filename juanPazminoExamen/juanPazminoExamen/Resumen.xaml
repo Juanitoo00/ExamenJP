@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="juanPazminoExamen.Resumen">
+    <ContentPage.Content>
+         <StackLayout>
+            <Label Text="Ventana de Resumen" FontSize="20" HorizontalOptions="Center"></Label>
+            <Label x:Name="lblUsuario" HorizontalOptions="End" FontSize="16"></Label>
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Label Text="Nombre" Grid.Row="0" Grid.Column="0"/>
+                <Entry x:Name="txtNombre" Placeholder="Nombre" Grid.Row="0" Grid.Column="1"/>
+                <Label Text="Total" Grid.Row="1" Grid.Column="0"/>
+                <Entry x:Name="txtTotal" Placeholder="Total" Keyboard="Numeric" Grid.Row="1" Grid.Column="1"/>
+              </Grid>
+
+            <Button x:Name="btnAcercaDe" Text="Acerca de" Clicked="btnAcercaDe_Clicked"/>
+          
+
+            
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
+
